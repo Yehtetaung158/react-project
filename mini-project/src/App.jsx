@@ -5,11 +5,11 @@ import TaskList from './components/TaskList'
 
 const App = () => {
   let [Tasks, setTasks] = useState([
-    "Complete project report",
-    "Attend team meeting",
-    "Review code for errors",
-    "Update project documentation",
-    "Send email to client"
+    { id: 1, task: "Complete project report", isDone: false },
+    { id: 2, task: "Attend team meeting", isDone: false },
+    { id: 3, task: "Review code for errors", isDone: false },
+    { id: 4, task: "Update project documentation", isDone: false },
+    { id: 5, task: "Send email to client", isDone: false }
 ]);
   
 
@@ -18,7 +18,7 @@ const App = () => {
     <div className='container mx-auto py-7'>
       <Heading/>
       <AddTask setTasks={setTasks} tasks={Tasks}/>
-      <TaskList tasks={Tasks} setTasks={setTasks}/>
+      <TaskList job={Tasks} setTasks={setTasks}/>
     </div>
     </>
   )
