@@ -1,12 +1,15 @@
 import React from "react";
 
 const Task = ({ tlk: { task, id, isDone }, handleDelete }) => {
+  const handleToggle = () => {
+    handleDelete({ task, id, isDone: !isDone });
+  };
   return (
     <div className="border-2 border-gray-500 px-3 py-2 flex justify-between items-center">
       <p className="text-lg text-gray-700">{task}</p>
       <button
         className="bg-red-500 text-white px-4 py-2 flex items-center gap-2 border-2 hover:bg-red-600 transition-all duration-300"
-        onClick={() => handleDelete({ task, id, isDone })}
+        onClick={handleToggle}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
