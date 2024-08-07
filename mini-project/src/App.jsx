@@ -11,14 +11,15 @@ const App = () => {
     { id: 4, task: "Update project documentation", isDone: false },
     { id: 5, task: "Send email to client", isDone: false }
 ]);
-  
-
+const doneTask=(id)=>{
+  setTasks(Tasks.map((task)=>task.id===id?{...task, isDone:!task.isDone}:task))
+}
   return (
     <>
     <div className='container mx-auto py-7'>
       <Heading/>
       <AddTask setTasks={setTasks} tasks={Tasks}/>
-      <TaskList job={Tasks} setTasks={setTasks}/>
+      <TaskList job={Tasks} setTasks={setTasks} key={Tasks.id} doneTask={doneTask}/>
     </div>
     </>
   )
