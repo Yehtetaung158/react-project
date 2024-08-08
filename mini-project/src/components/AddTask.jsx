@@ -21,6 +21,7 @@ const AddTask = ({ setTasks, tasks }) => {
     <div className='flex items-center my-4'>
       <input
         type="text"
+        autoFocus
         value={task}
         onChange={handleOnChange}
         className='w-2/3 p-2 border-2 border-gray-500 outline-none focus:border-blue-500 transition-all duration-300'

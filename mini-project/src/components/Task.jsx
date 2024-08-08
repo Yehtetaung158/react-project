@@ -14,11 +14,12 @@ const Task = ({ tlk: { task, id, isDone }, handleDelete, doneTask }) => {
       <div className="flex items-center gap-2">
         <input
           type="checkbox"
-          className={`size-5 ${isDone ? "line-through" : ""}`}
+          className={`size-5`}
+          id={`status${id}`}
           onChange={handlerOnChange}
           checked={isDone}
         />
-        <p className="text-lg text-gray-700">{task}</p>
+        <label className={`text-lg text-gray-700 ${isDone ? "line-through text-gray-500" : ""} select-none transition-all duration-300`} for={`status${id}`}>{task}</label>
       </div>
       <button
         className="bg-red-500 text-white px-4 py-2 flex items-center gap-2 border-2 hover:bg-red-600 transition-all duration-300"
