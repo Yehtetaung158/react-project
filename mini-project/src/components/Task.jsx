@@ -1,21 +1,23 @@
 import React from "react";
 
-const Task = ({ tlk: { task, id, isDone }, handleDelete, setTasks, doneTask}) => {
+const Task = ({ tlk: { task, id, isDone }, handleDelete, doneTask }) => {
   const handleToggle = () => {
     if (confirm("Are you sure you want to delete this task?")) {
       handleDelete({ id });
     }
   };
-  const handleCheck = () => {
-    setTasks(!isDone)
+  const handlerOnChange = () => {
+    doneTask(id);
   };
-  const handlerOnChange = (checkedTask)=>{
-    doneTask(checkedTask.id)
-  }
   return (
     <div className="border-2 border-gray-500 px-3 py-2 flex justify-between items-center">
       <div className="flex items-center gap-2">
-        <input type="checkbox" className={`size-5 ${isDone?"checked":"unchecked"}`} onChange={handlerOnChange} checked={isDone}/>
+        <input
+          type="checkbox"
+          className={`size-5 ${isDone ? "line-through" : ""}`}
+          onChange={handlerOnChange}
+          checked={isDone}
+        />
         <p className="text-lg text-gray-700">{task}</p>
       </div>
       <button
