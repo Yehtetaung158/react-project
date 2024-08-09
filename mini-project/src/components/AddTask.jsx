@@ -18,7 +18,7 @@ const AddTask = ({ setTasks, tasks }) => {
   };
 
   return (
-    <div className='flex items-center my-4'>
+    <div className='flex items-center my-4 justify-center'>
       <input
         type="text"
         autoFocus

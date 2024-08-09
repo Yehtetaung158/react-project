@@ -8,7 +8,7 @@ const TaskList = ({ job, setTasks, doneTask }) => {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl text-gray-600">TaskList ({job.length})</h1>
+      <h1 className="text-2xl text-gray-600">TaskList ({job.length}) Done Task ({job.filter((el) => el.isDone).length})</h1>
       {job.map((el) => (
         <Task
           tlk={el}
