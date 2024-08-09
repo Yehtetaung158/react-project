@@ -8,6 +8,7 @@ const Rating = ({ rate }) => {
     <div className="flex mt-auto items-end w-full">
       {numbers.map((number) => (
         <svg
+          key={number}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
