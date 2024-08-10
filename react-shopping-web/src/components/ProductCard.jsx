@@ -18,7 +18,7 @@ const ProductCard = ({
         <Rating rate={rate} />
         <div className="flex justify-between items-center w-full ">
           <p className="text-gray-700">Price: ({price})</p>
-          <button className="border-[1px] border-black px-4 py-2 font-semibold">
+          <button className="border-2 border-black px-4 py-2 font-semibold hover:bg-black hover:text-white transition-all duration-300">
             Add to Cart
           </button>
         </div>
