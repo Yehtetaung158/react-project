@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import useCart from '../Zustand/useState';
 
 const MyCart = () => {
-  const {cart, removeFromCart, id} = useCart();
+  const {cart, removeFromCart} = useCart();
   const handleRemove = (id)=> {
-    removeFromCart(cart.filter((item) => item.id !== id));
+    removeFromCart(id);
   }
   return (
     <div className='flex flex-col items-start justify-start container mx-auto'>
