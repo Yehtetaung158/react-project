@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import useCart from '../Zustand/useState';
 
 const MyCart = () => {
-  const {cart, removeFromCart} = useCart();
+  const {cart, removeFromCart, id} = useCart();
   const handleRemove = (id)=> {
+    console.log(id);
     removeFromCart(id);
   }
   return (
