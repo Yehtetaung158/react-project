@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useCart from "../Zustand/useState";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
           Online Shop
         </a>
         <button className="border-2 border-black px-4 py-2 font-semibold hover:bg-black hover:text-white transition-all duration-300">
-          <Link to={"/my-cart"}>My Cart</Link>
+          <Link to={"/my-cart"}>My Cart({useCart.getState().cart.length})</Link>
         </button>
       </div>
     </>
