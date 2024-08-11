@@ -7,5 +7,10 @@ const useCart = create((set) => ({
             cart: [...state.cart, item],
         }));
     },
+    removeFromCart: (item) => {
+        set((state)=>({
+            cart: [{state:item}],
+        }));
+    },
 }));
 export default useCart
