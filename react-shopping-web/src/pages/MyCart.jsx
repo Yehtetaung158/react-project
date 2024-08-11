@@ -23,11 +23,11 @@ const MyCart = () => {
             <p className="text-gray-700 line-clamp-1">{item.price} USD</p>
             <button
               onClick={() => handleOnClick(item.id)}
-              className=" bg-red-500 text-white px-2 py-1 rounded size-2/3"
+              className=" bg-red-500 text-white px-2 py-1 rounded w-2/4"
             >
               Remove
             </button>
-            <button className=" bg-blue-500 text-white px-2 py-1 rounded size-2/3">
+            <button className=" bg-blue-500 text-white px-2 py-1 rounded w-2/4">
               Purchase
             </button>
           </div>

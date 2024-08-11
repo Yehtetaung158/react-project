@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useCart from "../Zustand/useState";
 
 const Header = () => {
+  const { cart } = useCart();
   return (
     <>
       <div className="flex justify-between items-center container mx-auto py-5">
