@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const NavBtn = ({name}) => {
+const NavBtn = ({ item: { id, name, isActive, url }, handlerChanger }) => {
+  const handleClick = () => {
+    handlerChanger(id);
+  };
+
   return (
-    <button>{name}</button>
-  )
-}
+    <Link 
+      to={url} 
+      onClick={() => handleClick(id)}
+      className={`${isActive===true ? 'text-blue-500' : ''}`} // Apply styles based on isActive
+    >
+      {name}
+    </Link>
+  );
+};
 
-export default NavBtn
+export default NavBtn;
