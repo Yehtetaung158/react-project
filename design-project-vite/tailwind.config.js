@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'futura': ['futura', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
       },
     },
   },

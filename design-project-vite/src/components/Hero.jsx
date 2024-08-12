@@ -23,8 +23,8 @@ const Hero = () => {
             </p>
           </div>
           <div className="w-[286] flex justify-center items-center gap-[16px] h-[46px]">
-            <button className="border-[1px] border-[#6596A1] rounded-[8px] px-[20px] py-[8px] text-[#6596A1]">Learn More</button>
-            <button className="bg-[#6596A1] rounded-[8px] py-[8px] px-[20px] text-white border-[1px] w-[148px] h-[46px] flex items-center gap-[6px]">Get Started <i className="fa-solid fa-arrow-right text-[#F8F9FB]"></i></button>
+            <button className="border-[1px] border-[#6596A1] rounded-[8px] px-[20px] py-[8px] text-[#6596A1] font-lato">Learn More</button>
+            <button className="bg-[#6596A1] rounded-[8px] py-[8px] px-[20px] text-white border-[1px] w-[148px] h-[46px] flex items-center gap-[6px] font-lato">Get Started <i className="fa-solid fa-arrow-right text-[#F8F9FB]"></i></button>
           </div>
         </div>
       </div>

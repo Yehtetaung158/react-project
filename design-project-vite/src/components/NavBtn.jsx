@@ -10,7 +10,7 @@ const NavBtn = ({ item: { id, name, isActive, url }, handlerChanger }) => {
     <Link 
       to={url} 
       onClick={() => handleClick(id)}
-      className={`${isActive===true ? 'text-blue-500' : ''}`} // Apply styles based on isActive
+      className={`${isActive===true ? 'text-[#6596A1]' : 'text-[#7F7D7D]'} font-lato`}
     >
       {name}
     </Link>
