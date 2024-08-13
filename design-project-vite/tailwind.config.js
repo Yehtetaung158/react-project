@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom-shadow': '5px 9px 28px 0px rgba(0,0,0,0.48)',
+      },
+
       fontFamily: {
         'futura': ['futura', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
