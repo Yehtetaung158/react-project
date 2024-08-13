@@ -70,9 +70,7 @@ const Features = () => {
               Aliquet et cras nam sed mauris laoreet bibendum et.
             </p>
           </div>
-          <div>
-            
-          </div>
+          <div></div>
         </div>
       </div>
     </div>
